@@ -1,13 +1,16 @@
 # Landing Page Project
 
-## Table of Contents
+## Project Description
 
-* [Instructions](#instructions)
+This project requires me to build a multi-section landing page, with a dynamically updating navigational menu based on the amount of content that is added to the page.
 
-## Instructions
+## Usage
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+To access the starting page, the "index.html" should lead you to the landing page. If you click on one of the navigation menu, it should scroll to the appropriate section. Even by scrolling through the screen, the active menu should be displayed as well.
 
-To get started, open `js/app.js` and start building out the app's functionality
+## Starter Code
 
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+I used a starter code provided by Udacity - <a href="https://github.com/udacity/fend/tree/refresh-2019">Link to the starter code</a>
+
+This starter project has some HTML and CSS styling to display a static version of the Landing Page project.I needed to convert this project from a static project to an interactive one, which meant that I am required to modify the HTML and CSS files, but primarily the JavaScript file.
+
