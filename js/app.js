@@ -48,7 +48,7 @@ const anchors = document.querySelectorAll('a');
 /**
  * this functions -> adds class 'active' to each section and the corresponding nav when it reaches the top of viewport 
  * go through every individual section
- * get the area coordinates
+ * get the y coordinates
  * if the are coordinates are at these positions, set the class to active for the section, otherwise don't
  * go through every individual anchor
  * get href value from the anchor
@@ -60,7 +60,7 @@ const setToActive = () =>{
 
         const box = section.getBoundingClientRect();
 
-        if(box.top<=150 && box.bottom>=150){
+        if(box.y<=150 && box.bottom>=150){
             section.classList.add('your-active-class');
 
             anchors.forEach((anchor) =>{
