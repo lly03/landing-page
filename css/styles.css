@@ -12,7 +12,7 @@
 /* ---- Base Rules ---- */
 body {
     background: rgb(136,203,171);
-    background: linear-gradient(0deg, rgba(136,203,171,1) 0%, rgba(0,13,60,1) 100%);
+    background: linear-gradient(0deg, rgb(241, 232, 151) 0%, rgb(224, 46, 135) 100%);
     margin: 0;
     font-family: 'Merriweather', serif;
     color: #fff;
@@ -60,6 +60,17 @@ section {
     min-height: 80vh;
 }
 
+/*----Scroll to Top Button ----*/
+#topBtn{
+    border-radius: 50%;
+    padding: 1em;
+    position: fixed;
+    bottom: 5vh;
+    right: 4vh;
+    color: rgb(255, 255, 255);
+    background: rgb(66, 0, 0, 0.5);
+    border: none;
+}
 
 /* ---- Module Rules ---- */
 
@@ -67,30 +78,53 @@ section {
 .navbar__menu ul {
     padding-left: 0;
     margin: 0;
-    text-align: right;
+    text-align: center;
 }
 
 .navbar__menu li {
     display: inline-block;
 }
 
-.navbar__menu .menu__link {
+li a{
     display: block;
-    padding: 1em;
     font-weight: bold;
     text-decoration: none;
-    color: #000;
+    color: rgb(59, 1, 1);
+    padding: 0.3em;
 }
 
-.navbar__menu .menu__link:hover {
-    background: #333;
+.navbar__menu a:hover {
+    background: rgb(66, 0, 0, 0.5);
     color: #fff;
     transition: ease 0.3s all;
 }
 
+.menu__active{
+    display: block;
+    font-weight: bold;
+    color: #fff;
+    background: rgb(83, 3, 3);
+}
+
+@media only screen and (min-width: 35em){
+    .navbar__menu ul {
+        padding-left: 0;
+        margin: 0;
+        text-align: right;
+    }
+
+    li a{
+        display: block;
+        font-weight: bold;
+        text-decoration: none;
+        color: rgb(59, 1, 1);
+        padding: 2em;
+    }    
+}
+
 /* Header Styles */
 .page__header {
-    background: #fff;
+    background: rgb(207, 41, 91);
     position: fixed;
     top: 0;
     width: 100%;
@@ -99,13 +133,14 @@ section {
 
 /* Footer Styles */
 .page__footer {
-    background: #000;
+    background: rgb(241, 232, 151);
     padding: 3em;
-    color: #fff;
+    color: rgb(207, 41, 91);
 }
 
 .page__footer p{
-    color: #fff;
+    color: rgb(207, 41, 91);
+    text-align: center;
 }
 
 
