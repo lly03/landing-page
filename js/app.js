@@ -49,6 +49,9 @@ const anchors = document.querySelectorAll('a');
  * this functions -> adds class 'active' to each section and the corresponding nav when it reaches the top of viewport 
  * go through every individual section
  * if the section's top is greater than or equal to 0, and the distance from the section's bottom is less than or equal to the height of the viewport
+ * or if the section's top is less than 90 
+ * (I added this for the mobile view, because the section for the mobile view is longer in the viewport, hence it cannot run the first if statement.
+ * the rect.y works if it's less than 1, however, because the nav bar is covering the header the rect.y value needs to be less than 90)
  * then set the class to active for the section, otherwise don't
  * go through every individual anchor
  * get href value from the anchor
@@ -60,7 +63,7 @@ const setToActive = () =>{
 
         const rect = section.getBoundingClientRect();
 
-        if(rect.y>=0 && rect.bottom<=(window.innerHeight || document.documentElement.clientHeight)){
+        if(rect.y >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) || rect.y <= 90){
             section.classList.add('your-active-class');
 
             anchors.forEach((anchor) =>{
